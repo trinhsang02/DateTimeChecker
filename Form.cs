@@ -1,20 +1,28 @@
+using System.Runtime.CompilerServices;
+[assembly: InternalsVisibleTo("DateTimeChecker.xunit")]
+
 namespace DateTimeChecker
 {
     public partial class Form : System.Windows.Forms.Form
     {
+
+        //public string Day { get; set; }
+        //public string Month { get; set; }
+        //public string Year { get; set; }
+
         public Form()
         {
             InitializeComponent();
         }
 
-        private void clearButton_Click(object sender, EventArgs e)
+        public void clearButton_Click(object sender, EventArgs e)
         {
             dayTextBox.Clear();
             monthTextBox.Clear();
             yearTextBox.Clear();
         }
 
-        private void checkButton_Click(object sender, EventArgs e)
+        public void checkButton_Click(object sender, EventArgs e)
         {
             byte day;
             if (byte.TryParse(dayTextBox.Text, out day))
@@ -63,7 +71,7 @@ namespace DateTimeChecker
             else
                 MessageBox.Show($"{day}/{month}/{year} is NOT correct date time!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        private bool IsValidData(short year, byte month, byte  day)
+        public bool IsValidData(short year, byte month, byte  day)
         {
             if (month >= 1 && month <= 12)
             {            
@@ -79,7 +87,7 @@ namespace DateTimeChecker
             }
             return false;
         }
-        private byte DaysInMonth(short year, byte month)
+        public byte DaysInMonth(short year, byte month)
         {
             switch (month)
             {
