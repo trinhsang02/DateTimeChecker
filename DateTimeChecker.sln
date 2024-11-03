@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeChecker", "DateTimeChecker.csproj", "{23807D24-7F86-46C9-9E20-3E43A70ED30D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeChecker.xunit", "..\DateTimeChecker.xunit\DateTimeChecker.xunit.csproj", "{8B3D73E0-7A4D-4D31-9BC3-C07D4F547BF2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{23807D24-7F86-46C9-9E20-3E43A70ED30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23807D24-7F86-46C9-9E20-3E43A70ED30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23807D24-7F86-46C9-9E20-3E43A70ED30D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B3D73E0-7A4D-4D31-9BC3-C07D4F547BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B3D73E0-7A4D-4D31-9BC3-C07D4F547BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B3D73E0-7A4D-4D31-9BC3-C07D4F547BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B3D73E0-7A4D-4D31-9BC3-C07D4F547BF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
